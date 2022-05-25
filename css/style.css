@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "Verdana";
+    src: url("Verdana.eot");
+    src: local("Verdana"), url(../fonts/Verdana.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("Verdana-Bold.eot");
+    src: local("Verdana Bold"),
+        url(../fonts/Verdana-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("Verdana-Bolditalic.eot");
+    src: local("Verdana BoldItalic"),
+        url(../fonts/Verdana-BoldItalic.ttf) format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("Verdana-Italic.eot");
+    src: local("Verdana Italic"),
+        url(../fonts/Verdana-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Tahoma";
+    src: url("Tahoma-Bold.eot");
+    src: local("Tahoma Bold"), local("Tahoma-Bold"),
+        url(../fonts/Tahoma-Bold.eot) format("embedded-opentype"),
+        url(../fonts/Tahoma-Bold.woff2) format("woff2"),
+        url(../fonts/Tahoma-Bold.woff) format("woff"),
+        url(../fonts/Tahoma-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tahoma";
+    src: url("Tahoma.eot");
+    src: local("Tahoma"), url(../fonts/Tahoma.eot) format("embedded-opentype"),
+        url(../fonts/Tahoma.woff2) format("woff2"),
+        url(../fonts/Tahoma.woff) format("woff"),
+        url(../fonts/Tahoma.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img,
+svg {
+    width: 100%;
+    display: block;
+}
+
+.idc-section {
+    position: relative;
+    max-width: 690px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.idc-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.idc-container {
+    margin: 0 auto;
+    max-width: 610px;
+}
+
+.idc-bgwrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.idc-h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #e41383;
+}
+.idc-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #e41383;
+}
+.idc-text-1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #333333;
+}
+.idc-text-2 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333333;
+}
+.idc-ps {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* **********head***************** */
+.idc-head .idc-bgwrapper {
+    background-image: url(../img/head-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.idc-head .idc-container {
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+.idc-head .idc-logo {
+    width: 218px;
+    margin: 0 auto;
+}
+
+/* **********slider***************** */
+.idc-slider .idc-bgwrapper {
+    z-index: 1;
+}
+.idc-slider .idc-container {
+    height: 459px;
+}
+.idc-slider .idc-swiper {
+    position: relative;
+}
+.idc-slider .idc-swiper-pagination {
+    position: absolute;
+    display: inline-block;
+    bottom: 20px;
+    z-index: 2;
+    text-align: right;
+    padding-right: 120px;
+}
+.idc-slider .swiper-pagination-bullet {
+    border: 1px solid #ffffff;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
+    margin: 0 1px !important;
+}
+.idc-slider .swiper-pagination-bullet-active {
+    background: #ffffff;
+}
+
+/* **********pluses***************** */
+.idc-pluses .idc-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.idc-pluses .idc-title {
+    text-align: center;
+}
+.idc-pluses-block {
+    margin-top: 40px;
+}
+.idc-pluse:first-child {
+    margin-left: 0;
+}
+.idc-pluse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: calc(25% - 10px);
+    margin-left: auto;
+}
+.idc-pluse .idc-icon {
+    width: 77px;
+}
+.idc-pluse .idc-text-1 {
+    margin-top: 20px;
+}
+/* *************info************** */
+
+.idc-info .idc-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.idc-info p > strong {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #e41383;
+}
+.idc-info p {
+    margin: 0;
+}
+.idc-info p:not(:first-child) {
+    margin-top: 30px;
+}
+
+.idc-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.idc-info ul li {
+    position: relative;
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.idc-info ul li::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #333333;
+}
+
+.idc-info .idc-text-2 {
+    max-width: 511px;
+}
+.idc-info .idc-text-2 > span {
+    display: block;
+}
+
+/* *************video************** */
+.idc-video .idc-container {
+    height: 390px;
+}
+.idc-video-frame {
+    height: 390px;
+    width: 100%;
+}
+/* *************footer************** */
+.idc-footer .idc-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.idc-footer .idc-ps {
+    text-align: center;
+}
